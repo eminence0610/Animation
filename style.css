@@ -1,0 +1,40 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    animation: box 4s linear infinite;
+    /* transform: translateX(100px);
+    transition: 10s; */
+}
+
+@keyframes box {
+    
+    0% {
+        background-color: blue
+    }
+    
+    20% {
+        background-color: red;
+        transform: translateX(400px);
+    }
+    
+    40% {
+        background-color: green;
+      transform: translate(400px,200px);
+      border-radius: 100%;
+    }
+    60% {
+        background-color: black;
+        transform: translate(-100px,200px);
+       
+    }
+    80% {
+        background-color: brown;
+        transform: translate(-100px,-200px);
+       
+    }
+    100% {
+        transform: translate(0px,0px);
+
+    }
+}
